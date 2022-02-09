@@ -48,6 +48,9 @@ function showResults(){
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
 
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
 
 //array of objects containing all questions
 
@@ -173,3 +176,9 @@ const myQuestions = [
         correctAnswer: "b"
     },
 ]
+
+buildQuiz();
+  
+
+submitButton.addEventListener('click', showResults);
+})();
