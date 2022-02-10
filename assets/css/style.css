@@ -8,14 +8,14 @@ h2 {
     font-family: 'Rowdies', cursive;
     font-size: xx-large;
     font-weight: bold;
-    color: #E19E20;
+    color: #75C783;
     margin: 3%;
 }
 
 body p {
     font-size: xx-large;
     font-weight: 600;
-    color: #A98C66;
+    color: #6FA6FF;
 }
 
 /*General rule*/
@@ -24,8 +24,8 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: x-large;
-    font-weight: 500;
-    background-color: white;
+    font-weight: 700;
+    color: #2F4858;
 }
 
 /*Quiz container*/
@@ -42,6 +42,7 @@ body {
 }
 
 .answers {
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: left;
     display: inline-block;
@@ -69,4 +70,16 @@ body {
 .active-slide {
     opacity: 1;
     z-index: 2;
+}
+
+button {
+    background-color: #3E9051;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 62px;
 }
