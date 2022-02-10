@@ -4,7 +4,7 @@
     function buildQuiz(){
         const output = [];
         
-        myQuestions.forEach(
+        questions.forEach(
             (currentQuestion, questionNumber) => {
                 const answers = [];
                 for(letter in currentQuestion.answers){
@@ -35,7 +35,7 @@
 function showResults(){
     const answerContainers = quizContainer.querySelectorAll('.answers');
     let numCorrect = 0;
-    myQuestions.forEach( (currentQuestion, questionNumber) => {
+    questions.forEach( (currentQuestion, questionNumber) => {
         const answerContainer = answerContainers[questionNumber];
         const selector = `input[name=question${questionNumber}]:checked`;
         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
@@ -47,8 +47,9 @@ function showResults(){
             answerContainers[questionNumber].style.color = 'red';
         }
     });
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `${numCorrect} out of ${questions.length}`;
 }
+
 
 
 //function to create a silde showing only one question at a time
@@ -74,8 +75,6 @@ function showSlide(n) {
     }
 }
 
-//calling silde functions
-
 
 function showNextSlide() {
     showSlide(currentSlide + 1);
@@ -92,7 +91,7 @@ const submitButton = document.getElementById('submit');
 
 //array of objects containing all questions
 
-const myQuestions = [
+const questions = [
     {
         question: "What is the capital of Austria?",
         answers: {
@@ -235,3 +234,4 @@ previousButton.addEventListener("click", showPreviousSlide);
 
 nextButton.addEventListener("click", showNextSlide);
 })();
+
