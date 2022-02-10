@@ -12,6 +12,12 @@ h2 {
     margin: 3%;
 }
 
+body p {
+    font-size: xx-large;
+    font-weight: 600;
+    color: #A98C66;
+}
+
 /*General rule*/
 
 body {
@@ -22,7 +28,7 @@ body {
     background-color: white;
 }
 
-/*Quiz area*/
+/*Quiz container*/
 
 .quiz-container {
     position: relative;
@@ -30,10 +36,27 @@ body {
     margin-top: 40px;
 }
 
+.question {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+
+.answers label{
+    display: block;
+    margin-bottom: 10px;
+}
+
 
 /*Next and previous buttons*/
 
-.slide{
+.slide {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -41,8 +64,9 @@ body {
     z-index: 1;
     opacity: 0;
     transition: opacity 0.5s;
-  }
-  .active-slide{
+}
+
+.active-slide {
     opacity: 1;
     z-index: 2;
-  }
+}
