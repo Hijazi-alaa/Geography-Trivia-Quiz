@@ -21,3 +21,17 @@ It is very possiable to add as many questions as needed using java script  list 
 
 ## testing
 
+Testing using JShint validator:
+Metrics
+There are 8 functions in this file.
+
+Function with the largest signature take 2 arguments, while the median is 0.
+
+Largest function has 18 statements in it, while the median is 4.
+
+The most complex function has a cyclomatic complexity value of 3 while the median is 1
+<br>
+
+Testing using W3C validator:
+when tested using W3C validator i got a warning stating that:
+Section lacks heading. Consider adding h2-h6 elements to the section.
